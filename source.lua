@@ -418,7 +418,11 @@ function v2()
                  then
                     b1.TextColor3 = Color3.fromHex("#0eb997")
                     wait(0.5)
-                    spawn(__Script)
+                    spawn(
+                      function()
+                        __Script()
+                      end
+                    )
                     wait(0.5)
                     Close()
                 else
