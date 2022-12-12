@@ -5,7 +5,7 @@ local __Key = nil
 local __Discord = false
 local __Request = (syn and syn.request) or (http and http.request) or http_request
 local __AllLinks = {
-    ["https://kylndantas-key-system.kylndantas.repl.co/key"] = "https://getkey/",
+    ["https://1.kelprepl.repl.co"] = "https://getkey/",
     ["https://cutt.ly"] = "https://cutt.ly/",
     ["https://bit.ly"] = "https://bit.ly/",
     ["https://link-hub.net"] = "https://linkvertise/",
@@ -405,24 +405,20 @@ spawn(
     end
 )
 function v2()
-    if string.find(__Key, "https://kylndantas-key-system.kylndantas.repl.co/key") then
+    if string.find(__Key, "https://1.kelprepl.repl.co/verify/") then
         local v2, v3 =
             pcall(
             function()
                 if
                     b1.Text ==
                         game:HttpGet(
-                            "https://kylndantas-key-system.kylndantas.repl.co/key" ..
+                            "https://1.kelprepl.repl.co/verify/" ..
                                 string.sub(__Key, 34, string.len(__Key) .. "?verify_key=" .. b1.Text)
                         )
                  then
                     b1.TextColor3 = Color3.fromHex("#0eb997")
                     wait(0.5)
-                    spawn(
-                        function()
-                            loadstring(game:HttpGet(__Script, true))()
-                        end
-                    )
+                    spawn(__Script)
                     wait(0.5)
                     Close()
                 else
@@ -440,7 +436,11 @@ function v2()
                 if b1.Text == game:HttpGet(__Key) then
                     b1.TextColor3 = Color3.fromHex("#0eb997")
                     wait(0.5)
-                    spawn(__Script)
+                    spawn(
+                        function()
+                            loadstring(game:HttpGet(__Script, true))()
+                        end
+                    )
                     wait(0.5)
                     Close()
                 else
@@ -482,7 +482,7 @@ KeySystem.Sus = function(v0, v9, v15)
     if v0 ~= nil and not string.find(v0, "https://discord.com/invite") then
         for v13, v12 in pairs(__AllLinks) do
             c2.Text = v12 .. "getkey"
-            if "https://kylndantas-key-system.kylndantas.repl.co/key" == v13 then
+            if "https://1.kelprepl.repl.co" == v13 then
                 __Link = v0
                 c2.Text = v12 .. string.sub(v0, 42, string.len(v0))
             end
