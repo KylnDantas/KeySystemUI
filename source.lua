@@ -396,7 +396,7 @@ function v1()
         warn("Error: 2 (Link copy error)")
     end
 end
-print("ㅤ\nㅤKey System v1.1 \nㅤDiscord: https://discord.gg/wKpxWqarYk")
+print("ㅤ\nㅤKey System KylnDantas")
 spawn(
     function()
         game:GetService("ContentProvider"):PreloadAsync(
