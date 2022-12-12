@@ -396,7 +396,7 @@ function v1()
         warn("Error: 2 (Link copy error)")
     end
 end
-print("ㅤ\nㅤKey System KylnDantas")
+print("ㅤ\nㅤKey System v1.1 \nㅤDiscord: https://discord.gg/wKpxWqarYk")
 spawn(
     function()
         game:GetService("ContentProvider"):PreloadAsync(
@@ -441,9 +441,9 @@ function v2()
                     b1.TextColor3 = Color3.fromHex("#0eb997")
                     wait(0.5)
                     spawn(
-                        function()
-                            loadstring(game:HttpGet(__Script, true))()
-                        end
+                      function()
+                        __Script()
+                      end
                     )
                     wait(0.5)
                     Close()
@@ -463,9 +463,9 @@ function v2()
                     b1.TextColor3 = Color3.fromHex("#0eb997")
                     wait(0.3)
                     spawn(
-                        function()
-                            loadstring(game:HttpGet(__Script, true))()
-                        end
+                      function()
+                        __Script()
+                      end
                     )
                     Close()
                 end
