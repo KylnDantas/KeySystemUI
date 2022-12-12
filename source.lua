@@ -419,9 +419,9 @@ function v2()
                     b1.TextColor3 = Color3.fromHex("#0eb997")
                     wait(0.5)
                     spawn(
-                      function()
-                        __Script()
-                      end
+                        function()
+                            __Script()
+                        end
                     )
                     wait(0.5)
                     Close()
@@ -440,11 +440,7 @@ function v2()
                 if b1.Text == game:HttpGet(__Key) then
                     b1.TextColor3 = Color3.fromHex("#0eb997")
                     wait(0.5)
-                    spawn(
-                      function()
-                        __Script()
-                      end
-                    )
+                    __Script()
                     wait(0.5)
                     Close()
                 else
@@ -463,9 +459,9 @@ function v2()
                     b1.TextColor3 = Color3.fromHex("#0eb997")
                     wait(0.3)
                     spawn(
-                      function()
-                        __Script()
-                      end
+                        function()
+                            __Script()
+                        end
                     )
                     Close()
                 end
